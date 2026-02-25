@@ -52,7 +52,9 @@ const Navbar = ({ isModalOpen, setIsModalOpen, scrollTo }) => {
         </ul>
       </div>
       <div className="absolute top-14 left-0 w-full md:hidden">
-        {isModalOpen && <MenuModal />}
+        {isModalOpen && (
+          <MenuModal scrollTo={scrollTo} setIsModalOpen={setIsModalOpen} />
+        )}
       </div>
     </nav>
   );
