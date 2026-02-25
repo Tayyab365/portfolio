@@ -7,7 +7,7 @@ This project showcases my skills, featured projects, and contact information in 
 
 ## 🚀 Live Website
 
-🔗 https://YOUR-PORTFOLIO-LINK.vercel.app/
+🔗 https://tayyab-portfolio-app.vercel.app/
 
 ---
 
