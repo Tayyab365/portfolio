@@ -1,7 +1,7 @@
 import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
 import ProfileImg from "../assets/Profile.jpg";
 
-const HeroSection = ({ links }) => {
+const HeroSection = ({ links, scrollTo }) => {
   return (
     <div
       id="home"
@@ -19,10 +19,14 @@ const HeroSection = ({ links }) => {
         Frontend Developer
       </p>
       <p className="text-white text-md text-center">
-        Crafting beautiful, responsive web experiences with modern technologies
+        Building responsive and user-focused web applications using React and
+        modern frontend technologies.
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center items-center gap-3 w-full md:w-md">
-        <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-5 py-3 rounded-full cursor-pointer font-semibold w-full sm:w-sm hover:scale-105 duration-300 hover:shadow-[0_12px_30px_rgba(139,42,251,0.6)]">
+        <button
+          onClick={() => scrollTo("projects")}
+          className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-5 py-3 rounded-full cursor-pointer font-semibold w-full sm:w-sm hover:scale-105 duration-300 hover:shadow-[0_12px_30px_rgba(139,42,251,0.6)]"
+        >
           View Projects
         </button>
         <a
@@ -46,9 +50,6 @@ const HeroSection = ({ links }) => {
           </li>
         ))}
       </ul>
-      <button className="cursor-pointer animate-bounce text-[#cfb2ff]">
-        <ArrowDown />
-      </button>
     </div>
   );
 };

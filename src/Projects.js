@@ -6,38 +6,43 @@ import ExpenseTracker from "./assets/ExpenseTracker.png";
 const Projects = [
   {
     id: 1,
-    title: "Gaming Ecommerce",
+    title: "E-Commerce Store (FYP)",
     description:
-      "This is gaming ecommerce website called ShopEase. In this App we can buy any gaming products like gaming laptop, gaming mouse, gaming kayeboard etc",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    category: "FullStack",
+      "Full-stack e-commerce platform with authentication, cart system, and admin dashboard for managing products, users, and orders.",
+    tech: ["React", "Node.js", "MongoDB"],
     image: ShopEase,
+    live_demo: "https://tayyab-fyp.vercel.app/",
+    github: "https://github.com/Tayyab365/fyp",
   },
   {
     id: 2,
     title: "Todo App",
     description:
-      "This is Todo App. In this app we can Add, Modify, Delete any task.",
-    tech: ["React", "Tailwind", "CRUD"],
-    category: "React",
+      "Task management app that allows users to add, edit, delete, and organize tasks with real-time updates.",
+    tech: ["React", "CRUD", "Local Storage"],
     image: Todo,
+    live_demo: "https://tayyab-todo-app.vercel.app/",
+    github: "https://github.com/Tayyab365/todo-app",
   },
   {
     id: 3,
-    title: "Weather App",
+    title: "Weather Forecast App",
     description:
-      "This is Weather & Forecast App. In this app we see hourly, weekly forecast and weather of any city.",
-    tech: ["React", "Tailwind", "API"],
-    category: "UI/UX",
+      "Weather application showing real-time temperature, hourly forecast, and weekly predictions using live API data.",
+    tech: ["JavaScript", "API", "CSS"],
     image: WeatherApp,
+    live_demo: "https://tayyab-weather-app.vercel.app/",
+    github: "https://github.com/Tayyab365/weather-app",
   },
   {
     id: 4,
     title: "Expense Tracker",
-    description: "This is Expense Tracker App where we can add our expenses.",
-    tech: ["React", "Tailwind", "CRUD"],
-    category: "React",
+    description:
+      "Expense management tool to track daily spending with add, edit, and delete functionality and balance calculation.",
+    tech: ["React", "CRUD", "Local Storage"],
     image: ExpenseTracker,
+    live_demo: "https://tayyab-expense-tracker.vercel.app/",
+    github: "https://github.com/Tayyab365/expense-tracker-app",
   },
 ];
 

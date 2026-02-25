@@ -1,7 +1,7 @@
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import React from "react";
 
-const ContactSection = ({ links }) => {
+const ContactSection = ({ links, formData, setFormData, handleSubmit }) => {
   const contactDetails = [
     {
       id: 1,
@@ -33,12 +33,19 @@ const ContactSection = ({ links }) => {
         Have a project in mind? Let's work together to create something amazing!
       </p>
       <div className="flex flex-col xl:flex-row items-center gap-5 ">
-        <form className="space-y-5 border border-[#6b6dad] p-5 sm:p-6 md:p-8 rounded-xl bg-white/10 my-10 w-full">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-5 border border-[#6b6dad] p-5 sm:p-6 md:p-8 rounded-xl bg-white/10 my-10 w-full"
+        >
           <div className="flex flex-col gap-3">
             <label className="font-medium">Name</label>
             <input
               type="text"
               placeholder="Your Name"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               className=" border border-[#6f7fb6] py-3 px-3 rounded-xl bg-white/10 outline-none"
             />
           </div>
@@ -47,6 +54,10 @@ const ContactSection = ({ links }) => {
             <input
               type="email"
               placeholder="your.email@example.com"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               className="border border-[#6f7fb6] py-3 px-3 rounded-xl bg-white/10 outline-none"
             />
           </div>
@@ -54,10 +65,17 @@ const ContactSection = ({ links }) => {
             <label className="font-medium">Message</label>
             <textarea
               placeholder="Your Message..."
+              value={formData.message}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
               className="border border-[#6f7fb6] py-3 px-3 rounded-xl bg-white/10 outline-none min-h-28"
             />
           </div>
-          <button className="bg-gradient-to-r from-[#9618fb] to-[#265bfb] w-full py-2 rounded-xl font-medium cursor-pointer hover:scale-105 duration-300 hover:shadow-[0_12px_30px_rgba(139,42,251,0.6)]">
+          <button
+            type="submit"
+            className="bg-gradient-to-r from-[#9618fb] to-[#265bfb] w-full py-2 rounded-xl font-medium cursor-pointer hover:scale-105 duration-300 hover:shadow-[0_12px_30px_rgba(139,42,251,0.6)]"
+          >
             Send Message
           </button>
         </form>

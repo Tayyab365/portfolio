@@ -1,12 +1,9 @@
 import { Menu, X } from "lucide-react";
 import MenuModal from "./MenuModal";
 
-const Navbar = ({ isModalOpen, setIsModalOpen }) => {
-  const scrollTo = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
+const Navbar = ({ isModalOpen, setIsModalOpen, scrollTo }) => {
   return (
-    <nav className="bg-[#050915] lg:px-14 sticky top-0 left-0">
+    <nav className="bg-[#050915] lg:px-14 sticky top-0 left-0 z-50">
       <div className="flex justify-between items-center px-5 sm:px-10 py-4 text-white">
         <h1
           onClick={() => scrollTo("home")}

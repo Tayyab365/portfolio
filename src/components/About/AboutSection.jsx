@@ -6,75 +6,75 @@ import Skills from "./Skills";
 
 const AboutSection = () => {
   const technologies = [
-    "React",
+    "React.js",
     "JavaScript",
-    "Tailwind CSS",
-    "Git",
     "HTML5",
     "CSS3",
+    "Tailwind CSS",
     "REST APIs",
+    "Git & GitHub",
   ];
   const highlights = [
     {
       id: 1,
       icon: Code2,
-      title: "5+ years",
-      description: "Development Experience",
+      title: "1+ Year",
+      description: "Frontend Experience",
     },
     {
       id: 2,
       icon: Award,
-      title: "50+ Projects",
+      title: "5+ Projects",
       description: "Successfully Completed",
     },
     {
       id: 3,
       icon: Palette,
-      title: "Modern Design",
-      description: "UI/UX Focused",
+      title: "Clean UI",
+      description: "Responsive Design",
     },
     {
       id: 4,
       icon: Zap,
-      title: "Fast & Optimized",
-      description: "Performance Driven",
+      title: "Fast Learning",
+      description: "Quick Problem Solver",
     },
   ];
   const skills = [
     {
       id: 1,
-      name: "React.js",
-      percentage: 90,
+      name: "React",
+      percentage: 80,
       gradient: "bg-gradient-to-r from-purple-500 to-purple-600",
     },
     {
       id: 2,
       name: "JavaScript",
-      percentage: 85,
+      percentage: 70,
       gradient: "bg-gradient-to-r from-blue-500 to-blue-600",
     },
     {
       id: 3,
-      name: "Tailwind CSS",
-      percentage: 80,
+      name: "HTML5",
+      percentage: 90,
       gradient: "bg-gradient-to-r from-cyan-500 to-cyan-600",
     },
     {
       id: 4,
-      name: "TypeScript",
-      percentage: 75,
+      name: "CSS",
+      percentage: 85,
       gradient: "bg-gradient-to-r from-indigo-500 to-indigo-600",
     },
     {
       id: 5,
-      name: "Next.js",
-      percentage: 70,
+      name: "Tailwind CSS",
+      percentage: 80,
       gradient: "bg-gradient-to-r from-gray-500 to-gray-700",
     },
     {
       id: 6,
       name: "Git",
-      percentage: 85,
+      percentage: 70,
       gradient: "bg-gradient-to-r from-orange-500 to-orange-600",
     },
   ];
@@ -87,18 +87,18 @@ const AboutSection = () => {
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="lg:w-[50%]">
           <p className="text-base md:text-md lg:text-lg text-gray-700 leading-relaxed">
-            I'm a passionate frontend developer with over 5 years of experience
-            in creating beautiful, responsive, and user-friendly web
-            applications. I specialize in React and modern JavaScript
-            frameworks, bringing ideas to life through clean code and intuitive
-            design.
+            I’m a passionate Frontend Developer specializing in React.js with
+            hands-on experience building responsive and interactive web
+            applications. I enjoy turning ideas into clean and user-friendly
+            interfaces using modern technologies like HTML, CSS, JavaScript, and
+            Tailwind CSS.
           </p>
           <br />
           <p className="text-base md:text-md lg:text-lg text-gray-700 leading-relaxed">
-            My approach combines technical expertise with creative
-            problem-solving to deliver exceptional digital experiences. I'm
-            constantly learning and staying up-to-date with the latest web
-            technologies and best practices.
+            I have worked on real-world projects including a full-stack
+            e-commerce platform with authentication, dashboard, and API
+            integration. I’m constantly learning and improving my skills to
+            become a better developer every day.
           </p>
           <div className="my-5">
             <h1 className="text-xl font-bold text-[#1e2939]">
